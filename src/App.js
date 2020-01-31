@@ -15,40 +15,10 @@ import Home from './home.js'
 import Navbar from './navbar.js'
 import Contact from './contact.js'
 import Posts from './posts.js'
+import Header from './header.js'
 
 export default function App() {
   return (
-    <Router>
-      <div>
-        <AppBar color="primary" position="click" >
-          <Navbar />
-        </AppBar>
-      </div>
-      <div>
-        <ul>
-          <li>
-            <Link to="/home">Home</Link>
-          </li>
-          <li>
-            <Link to="/posts">Posts</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-
-        <Switch>
-          <Route path="/home">
-            <Home />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/posts">
-            <Posts />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+    <Header />
   );
 }
